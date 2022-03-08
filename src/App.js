@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-export default function App() {
+export function App() {
   const [num, setNum] = React.useState(() =>
     Math.floor(Math.random() * (100 - 1))
   );
@@ -20,5 +20,5 @@ export default function App() {
 }
 
 function Children({ value }) {
-  return <div>{value}</div>;
+  return <div className="children">{value}</div>;
 }

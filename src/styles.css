@@ -8,3 +8,11 @@
   border-radius: 5px;
   border-style: none;
 }
+
+.children {
+  background-color: whitesmoke;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
