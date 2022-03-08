@@ -2,12 +2,14 @@ import React from "react";
 import "./styles.css";
 
 export function App() {
-  const [num, setNum] = React.useState(() =>
-    Math.floor(Math.random() * (100 - 1))
-  );
+  const [num, setNum] = React.useState();
+
+  React.useEffect(() => {
+    setNum(1);
+  }, []);
 
   function handleClick() {
-    setNum(Math.floor(Math.random() * (100 - 1)));
+    setNum(() => Math.floor(Math.random() * (100 - 1)));
   }
   return (
     <div>
